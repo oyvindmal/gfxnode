@@ -1,0 +1,19 @@
+extends layout.pug
+
+block content
+    h1 Manuell supring
+    p Her kan du kjøre manuellsupring
+
+    h2 Fra representantliste
+    label(for='repSpeakerId') Delegatnummer
+    input(type='text' class='form-control' placeholder='Delegatnummer' id='repSpeakerId')
+    button(class='btn btn-success' id='manDelRun') Kjør
+    h2 Helmanuell
+    label(for='manName') Navn
+    input(type='text' class='form-control' placeholder='Navn' id='manName')
+    label(for='manTitle') Tittel
+    input(type='text' class='form-control' placeholder='Tittel/Gruppe' id='manTitle')
+    button(class='btn btn-success' id='runManual') Kjør
+
+block scripts
+        script(src='/manuell.js')

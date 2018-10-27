@@ -1,0 +1,38 @@
+html
+    head
+        title GFX Node 3.0
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css')
+        link(rel='stylesheet' href='/template.css')
+    body
+    nav(class='navbar navbar-expand-md navbar-dark bg-dark fixed-top')
+        a(class='navbar-brand' href='/admin') GFXNode 3.0
+        button(class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarsExampleDefault' aria-controls='navbarsExampleDefault' aria-expanded='false' aria-label='Toggle navigation')
+            span(class='navbar-toggler-icon')
+
+        div(class='collapse navbar-collapse' id='navbarsExampleDefault')
+            ul(class='navbar-nav mr-auto')
+                li(class='nav-item')
+                    a(class='nav-link' href='/admin/taleliste') Taleliste
+                li(class='nav-item')    
+                    a(class='nav-link' href='#') Saksliste
+                li(class='nav-item')
+                    a(class='nav-link' href='/admin/manuell') Manuell supring
+    div(class='container')
+        div(class='row')
+                div(class='col-lg-10')
+                    block content
+                div(class='col-lg-2')
+                    h2 Aktive overlays
+                        button(class='btn btn-success') BUG
+                        button(class='btn btn-outline-success') Neste taler
+                        button(class='btn btn-outline-success') Neste taler
+
+    script(src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js')
+    script(src='/socket.io/socket.io.js')
+    script.
+        var socket = io.connect('http://localhost:8082');
+    block scripts
