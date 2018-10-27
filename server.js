@@ -3,7 +3,7 @@ var express = require('express');
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
 var request = require('request');
-var port = process.env.port || 8082;
+var port = process.env.PORT || 8080;
 var bodyParser = require('body-parser')
 app.use( bodyParser.json() );       // to support JSON-encoded bodies
 server.listen(port);
