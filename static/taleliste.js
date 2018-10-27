@@ -1,4 +1,4 @@
-var socket = io.connect('http://localhost:8082');
+var socket = io.connect('https://gfxnode.herokuapp.com');
 $(document).ready(function() 
     {
         getTaleliste();
