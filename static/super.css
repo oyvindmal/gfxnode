@@ -11,15 +11,15 @@ body
     position: absolute;
     top:0;
     left:0;
-    width:1600px;
-    height:900px;
+    width:1920px;
+    height:1080px;
     background:#00ff00
 }
 
 #super 
 {
     background: url('/img/superlt.png');
-    width:1200px;
+    width:1644px;
     height: 286px;
     position: absolute;
     left:0;
