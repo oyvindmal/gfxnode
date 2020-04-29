@@ -4,7 +4,7 @@ body
     margin:0;
     padding:0;
     font-family: sans-serif;
-    color: #6c163c;
+    color: #610000;
 }
 #canvas 
 {
@@ -32,7 +32,7 @@ body
 #supername 
 {
     position: absolute;
-    bottom:60px;
+    bottom:80px;
     left:300px;
     font-size:2.7em;
 }
@@ -40,7 +40,7 @@ body
 #supertitle
 {
     position: absolute;
-    bottom:20px;
+    bottom:40px;
     left:300px;
     font-size:1.9em;
 }
