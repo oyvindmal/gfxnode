@@ -18,9 +18,9 @@ body
 
 #super 
 {
-    background: url('/img/naireks.png');
-    width:920px;
-    height: 221px;
+    background: url('/img/edsuper.png');
+    width:1122px;
+    height: 204px;
     position: absolute;
     left:0;
     bottom:40px;
@@ -31,6 +31,7 @@ body
 
 #supername 
 {
+    color: #000;
     position: absolute;
     bottom:80px;
     left:300px;
@@ -39,6 +40,7 @@ body
 
 #supertitle
 {
+    color:#000;
     position: absolute;
     bottom:40px;
     left:300px;
