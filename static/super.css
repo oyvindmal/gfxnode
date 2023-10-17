@@ -8,19 +8,16 @@ body
 }
 #canvas 
 {
-    position: absolute;
-    top:0;
-    left:0;
-    width:1920px;
-    height:1080px;
-    
+    width:100%;
+    height:100%;
 }
 
 #super 
 {
-    background: url('/img/edsuper.png');
-    width:1122px;
-    height: 204px;
+    background: url('/img/superlt.png');
+    
+    width:1644px;
+    height: 286px;
     position: absolute;
     left:0;
     bottom:40px;
@@ -31,7 +28,7 @@ body
 
 #supername 
 {
-    color: #000;
+ 
     position: absolute;
     bottom:80px;
     left:300px;
@@ -40,7 +37,7 @@ body
 
 #supertitle
 {
-    color:#000;
+
     position: absolute;
     bottom:40px;
     left:300px;
