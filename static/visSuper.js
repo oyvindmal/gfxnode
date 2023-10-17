@@ -1,4 +1,4 @@
-var socket = io.connect('https://gfxnode.herokuapp.com');
+var socket = io.connect('http://localhost:8080');
 
 socket.on('runSuper', function (data) {
 
