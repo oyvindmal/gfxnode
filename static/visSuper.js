@@ -13,6 +13,6 @@ socket.on('runSuper', function (data) {
         setTimeout(function () {
             $("#super").fadeToggle("slow");
 
-        }, 10000);
+        }, 5000);
     })
 });
