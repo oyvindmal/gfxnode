@@ -32,9 +32,7 @@ app.get('/show/super', function (req,res) {
     res.render('super');
 });
 
-app.get('/show/sak', function (req,res) {
-    res.render('sak');
-});
+
 
 app.post('/api/loadSuper', function (req,res)
 {
@@ -56,16 +54,7 @@ app.get('/api/taleliste', function(req, res) {
 })
 
 
-app.get('/api/sak', function (req, res){
-    //https://dev.endring.xyz/api/v1/MeetingStatus/landstinget-2017
-    var options = {
-        url: 'https://dev.endring.xyz/api/v1/MeetingStatus/landstinget-2017'
-    
-      };
-    request(options, function (error, response, body) {
-        res.send(body);
-    });
-})
+
 app.get('/api/representatives/:speakerId', function(req, res) {
     var id = parseInt(req.params.speakerId);
     var options = {
@@ -82,7 +71,7 @@ app.get('/api/representatives/:speakerId', function(req, res) {
 
 app.use(express.static('static'));
 io.on('connection', function (socket) {
-    //socket.emit('runSuper', {"lol" : "lol2"});
+   
    console.log("hei");
     socket.on('cmdSuper', function (data) {
         console.log("sending super command");
