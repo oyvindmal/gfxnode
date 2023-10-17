@@ -13,9 +13,6 @@ app.get('/', function (req, res) {
     res.sendFile(__dirname + '/views/index.html');
 });
 
-app.get('/control', function (req, res) {
-    res.sendFile(__dirname + '/views/control.html');
-});
 
 
 app.get('/admin', function (req, res) {
